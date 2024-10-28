@@ -49,6 +49,7 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 	</head>
 	<body>
 		
@@ -65,15 +66,7 @@
 					<ul>
 						<li class="active"><a href="index.html">INICIO</a></li>
 						<li><a href="historia.html">NUESTRA HISTORIA</a></li>
-						<li class="has-dropdown">
-							<a href="services.html">EVENTO</a>
-							<ul class="dropdown">
-								<li><a href="#">Web Design</a></li>
-								<li><a href="#">eCommerce</a></li>
-								<li><a href="#">Branding</a></li>
-								<li><a href="#">API</a></li>
-							</ul>
-						</li>
+						<li><a href="evento.html">CRONOGRAMA EVENTO</a></li>
 						<li><a href="contact.html">DIRECCION</a></li> 
 						<li><a href="contact.html">REGALO</a></li>
 						<li class="has-dropdown">
@@ -169,7 +162,7 @@
 				<div class="display-t">
 					<div class="display-tc">
 						<h1>Dress Code</h1>
-						<span>Codigo de vestimenta <strong>elegante sport</strong></span>
+						<span id="selected-by-me">Codigo de vestimenta <strong>elegante sport</strong></span>
 						<img src="./images/dress-code.png" alt="">
 					</div>
 				</div>
@@ -231,88 +224,13 @@
 			<div class="row">
 				<div class="display-t">
 					<div class="display-tc">
-						<div class="col-md-10 col-md-offset-1">
-							<div class="col-md-4 col-sm-3 text-center">
-								<div class="event-wrap animate-box">
-									<h3>PING PONG & METEGOL</h3> <!-- Actividad 4 -->
+						<div class="col-md col-md-offset-2">
+							<div class="col-md-10 col-sm-1 text-center">
+								<div class="event-wrap animate-box" id="evento-boton">
+									<h3 id="selected-by-me">VER CRONOGRAMA COMPLETO</h3> <!-- Actividad 4 -->
 									<div class="event-col-1">
-										<i class="icon-trophy"></i>
+										<i class="icon-link"></i>
 									</div>
-									<p>Después de la ceremonia se van a habilitar las mesas de Ping Pong y de Metegol, para ping pong habrá lista de espera y torneo.</p>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-3 text-center">
-								<div class="event-wrap animate-box">
-									<h3>SUGERENCIAS</h3> <!-- Actividad 5 -->
-									<div class="event-col">
-										<i class="icon-clock"></i>
-										<span>7:00 PM</span>
-										<span>12:00 AM</span>
-									</div>
-									<div class="event-col">
-										<i class="icon-calendar"></i>
-										<span>Monday 28</span>
-										<span>November, 2016</span>
-									</div>
-									<p>AAA</p>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-3 text-center">
-								<div class="event-wrap animate-box">
-									<h3>SUGERENCIAS</h3>
-									<div class="event-col">
-										<i class="icon-clock"></i>
-										<span>7:00 PM</span>
-										<span>12:00 AM</span>
-									</div>
-									<div class="event-col">
-										<i class="icon-calendar"></i>
-										<span>Monday 28</span>
-										<span>November, 2016</span>
-									</div>
-									<p>AAA</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-			</div>
-			<div class="row">
-				<div class="display-t">
-					<div class="display-tc">
-						<div class="col-md-10 col-md-offset-1">
-							<div class="col-md-4 col-sm-3 text-center">
-								<div class="event-wrap animate-box">
-									<h3>SUGERENCIAS</h3> <!-- Actividad 1 -->
-									<div class="event-col-1">
-										<i class="icon-clock"></i>
-										<span>10:00 AM</span>
-										<span>11:30 AM</span>
-									</div>
-									<p>Antes de la gran ceremonia vamos a ofrecer un pequeño desayuno para aguantar hasta el evento principal</p>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-3 text-center">
-								<div class="event-wrap animate-box">
-									<h3>SORTEO</h3>
-									<div class="event-col-1">
-										<i class="icon-clock"></i>
-										<span>7:00 PM</span>
-									</div>
-									<p>Todos tendrán un numero asignado al ingresar al evento, haremos sorteos por varios premios</p>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-3 text-center">
-								<div class="event-wrap animate-box">
-									<h3>CIERRE</h3>
-									<div class="event-col-1">
-										<i class="icon-clock"></i>
-										<span>7:30 PM</span>
-										<span>8:00 PM</span>
-									</div>
-									<p>Agradecimiento final, despedida y cierre del evento, el lider de mesa elige quién se queda el souvenir de la mesa</p>
 								</div>
 							</div>
 						</div>
@@ -371,32 +289,8 @@
 							</div>
 						</li>
 						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge" style="background-image:url(images/chimuelo_bebe.jpg);"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Compromiso gatuno</h3>
-									<span class="date">Septiembre 21, 2021</span>
-								</div>
-								<div class="timeline-body">
-									<p>Una noche se encontraron con Chimuelo en la calle abajo de un auto a las afueras de un Dia%, esa fue la noche que se comprometieron a cuidar de Chimuelo como señal de inicio a su relación.</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(images/mudanza.jpg);"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Nos mudamos!</h3>
-									<span class="date">Junio 1, 2022</span>
-								</div>
-								<div class="timeline-body">
-									<p>Chimuelo creció y se mudaron juntos a un departamento más grande y espacioso</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
 							<div class="timeline-badge" style="background-image:url(images/panico.jpg);"></div>
-							<div class="timeline-panel">
+							<div class="timeline-panel" id="historia-completa">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">¡VER HISTORIA COMPLETA!</h3>
 									<span class="date">2021 - 2025</span>
@@ -425,7 +319,7 @@
 				<div class="row">
 					<div class="col-md-12 animate-box">
 						<div class="wrap-testimony">
-							<div class="owl-carousel-fullwidth">
+							<div class="owl-carousel-fullwidth" id="carrousel">
 								<div class="item">
 									<div class="testimony-slide active text-center">
 										<figure>
@@ -453,11 +347,11 @@
 					</div>
 				</div>
 				<div style="white-space: nowrap;" class="col-md-12 col-md-offset-0 text-center fh5co-heading animate-box">
-					<input type="text" class="form-control" placeholder="Tu nombre" style="width: 15%; display: inline-block;">
-					<input type="text" class="form-control" placeholder="Comenta algo!" style="width: 40%; display: inline-block;">
+					<input type="text" id="name" class="form-control" placeholder="Tu nombre" style="width: 15%; display: inline-block;">
+					<input type="text" id="message" class="form-control" placeholder="Comenta algo!" style="width: 40%; display: inline-block;">
 					<br>
 					<br>
-					<button type="submit" class="btn btn-default btn-block" style="width: 40%; display: inline-block;">Comentar</button>
+					<button type="submit" id="contact-form" class="btn btn-default btn-block" style="width: 40%; display: inline-block;">Comentar</button>
 				</div>
 			</div>
 		</div>
@@ -468,8 +362,8 @@
 			
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>We Offer Services</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<h2>Resumen</h2>
+					<p>TL;DR. Sabemos que es un montón de info así que hicimos un video para explicar todo lo que tenemos en este día</p>
 				</div>
 			</div>
 
@@ -480,18 +374,18 @@
 							<i class="icon-calendar"></i>
 						</span>
 						<div class="feature-copy">
-							<h3>We Organized Events</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+							<h3>Martes 25 de Febrero 2025</h3>
+							<p>Sí, es Martes, reservá el día en el trabajo y vení a festejar</p>
 						</div>
 					</div>
 
 					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
 						<span class="icon">
-							<i class="icon-image"></i>
+							<i class="icon-heart2"></i>
 						</span>
 						<div class="feature-copy">
-							<h3>Photoshoot</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+							<h3>CONFIRMA ASISTENCIA</h3>
+							<p>No te olvides de confirmarnos tu asistencia <strong><a href="./confirmacion.html">CONFIRMAR</a></strong></p>
 						</div>
 					</div>
 
@@ -500,22 +394,46 @@
 							<i class="icon-video"></i>
 						</span>
 						<div class="feature-copy">
-							<h3>Video Editing</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+							<h3>Ceremonia en Stream!</h3>
+							<p>Para aquellos que no van a poder estar presentes fisicamente vamos a dejar un link para verlo digitalmente por todo el mundo!</p>
 						</div>
 					</div>
 
 				</div>
 
 				<div class="col-md-6 animate-box">
-					<div class="fh5co-video fh5co-bg" style="background-image: url(images/img_bg_3.jpg); ">
-						<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a>
+					<div class="fh5co-video fh5co-bg" style="background-image: url(images/img_bg_5.jpg); ">
+						<a href="https://www.youtube.com/watch?v=bvCsTca0uBc" class="popup-vimeo"><i class="icon-video2"></i></a>
 						<div class="overlay"></div>
 					</div>
 				</div>
 			</div>
 
 			
+		</div>
+	</div>
+
+	<div id="fh5co-testimonial">
+		<div class="container">
+			<div class="row">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>Regalo</h2>
+						<span>No vamos a cobrar tarjeta porque entendemos que cada familia tiene sus propias posibilidades y economías, lo más importante para nosotros es disfrutar con todos ustedes.</span>
+						<br>
+						<br>
+						<span>Aún así si quieren coolaborar con nuestro sueño de poder viajar a Europa les estariamos agradecidos de que en vez de un regalo físico pudieran elegir aportar económicamente en los siguientes links de Mercado Pago</span>
+
+					</div>
+				</div>
+				<div class="row">
+					<div style="white-space: nowrap;" class="col-md-12 col-md-offset-0 text-center fh5co-heading animate-box">
+						<p>Regalanos un desayuno para 2 ☕<strong><a href="https://mpago.la/1KmFjap" target="_blank"> Click para hacer un regalo 25 </a></strong></p>
+						<p>Regalanos un gustito ✨ <strong><a href="https://mpago.la/2MwiKC7" target="_blank"> Click para hacer un regalo 50 </a></strong></p>
+						<p>Regalanos un viaje 🚢 <strong><a href="https://mpago.la/3482hSL" target="_blank"> Click para hacer un regalo 100 </a></strong></p>
+						<p>Regalanos una luna de miel 🌸 <strong><a href="https://mpago.la/1f8xuFz" target="_blank"> Click para hacer un regalo 200 </a></strong></p>
+					</div>
+			</div>
 		</div>
 	</div>
 
@@ -642,8 +560,9 @@
 	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 	<script src="js/main.js"></script>
-
+	<script src="js/mailer.js"></script>
 	<script>
     var d = new Date(new Date('2025-02-25T12:00:00'));
 
@@ -672,6 +591,21 @@
 	confirmar2.addEventListener('click', () => {
 		window.location.href = './confirmacion.html';
 	});
+
+	const eventoBoton = document.getElementById('evento-boton');
+
+	eventoBoton.addEventListener('click', () => {
+		window.location.href = './evento.html';
+	})
+
+
+	const historiaBoton = document.getElementById('historia-completa');
+
+	historiaBoton.addEventListener('click', () => {
+		window.location.href = './historia.html';
+	})
+
+	
 
 </script>
 

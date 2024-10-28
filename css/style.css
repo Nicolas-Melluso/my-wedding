@@ -1894,3 +1894,16 @@ form label {
   overflow: hidden;
   margin-left: 25%;
 }
+
+#selected-by-me {
+  background-color: #b91515 !important;
+  padding: 10px;
+}
+
+#evento-boton {
+  cursor: pointer;
+}
+
+#historia-completa {
+  cursor: pointer;
+}
