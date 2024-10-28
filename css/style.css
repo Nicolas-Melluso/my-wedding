@@ -1905,5 +1905,5 @@ form label {
 }
 
 #historia-completa {
-  cursor: pointer;
+  cursor: pointer !important;
 }
