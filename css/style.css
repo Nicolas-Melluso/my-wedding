@@ -1896,12 +1896,12 @@ form label {
 }
 
 #selected-by-me {
-  background-color: #b91515 !important;
+  background: #b91515 !important;
   padding: 10px;
 }
 
 #evento-boton {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 #historia-completa {
