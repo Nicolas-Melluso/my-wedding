@@ -975,8 +975,8 @@ form label {
   .simply-countdown > .simply-section {
     /* coutndown blocks */
     display: inline-block;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background: rgba(214, 6, 6, 0.8);
     margin: 0 4px;
     -webkit-border-radius: 50%;
@@ -991,8 +991,8 @@ form label {
     /* countdown block inner div */
     display: table-cell;
     vertical-align: middle;
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
   }
 }
 
