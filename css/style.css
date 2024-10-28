@@ -962,6 +962,40 @@ form label {
   animation: pulse 1s ease infinite;
 }
 
+
+.simply-countdown > .simply-section > div {
+  /* countdown block inner div */
+  display: table-cell;
+  vertical-align: middle;
+  height: 100px;
+  width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .simply-countdown > .simply-section {
+    /* coutndown blocks */
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: rgba(214, 6, 6, 0.8);
+    margin: 0 4px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+    animation: pulse 1s ease infinite;
+  }
+
+  .simply-countdown > .simply-section > div {
+    /* countdown block inner div */
+    display: table-cell;
+    vertical-align: middle;
+    height: 80px;
+    width: 80px;
+  }
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -973,13 +1007,7 @@ form label {
     transform: scale(1);
   }
 }
-.simply-countdown > .simply-section > div {
-  /* countdown block inner div */
-  display: table-cell;
-  vertical-align: middle;
-  height: 100px;
-  width: 100px;
-}
+
 
 .simply-countdown > .simply-section .simply-amount,
 .simply-countdown > .simply-section .simply-word {
@@ -1040,6 +1068,7 @@ form label {
   margin: 0 auto;
   position: relative;
 }
+
 @media screen and (max-width: 768px) {
   .couple-wrap {
     width: 100%;
