@@ -1895,7 +1895,7 @@ form label {
   margin-left: 25%;
 }
 
-#selected-by-me {
+#selected-by-me, #crono-selected-by-me {
   background: #b91515 !important;
   padding: 10px;
 }
