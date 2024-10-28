@@ -1895,7 +1895,13 @@ form label {
   margin-left: 25%;
 }
 
-#selected-by-me, #crono-selected-by-me {
+#selected-by-me {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#crono-selected-by-me {
   background: #b91515 !important;
   padding: 10px;
 }
