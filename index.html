@@ -436,6 +436,7 @@
 					</div>
 			</div>
 		</div>
+		</div>
 	</div>
 
 	<div id="resume" class="fh5co-section-gray">
@@ -444,11 +445,11 @@
 				<div class="row">
 					<div style="white-space: nowrap;" class="col-md-12 col-md-offset-0 text-center fh5co-heading animate-box">
 						<h2>Botones Rapidos ⚡</h2>
-						<button class="btn btn-primary btn-block"><a href="https://youtube.com/live/uommi4NsMsk?feature=share" target="_blank" style="color: white;">CEREMONIA EN VIVO</a></button>
-						<button class="btn btn-primary btn-block"><a href="https://maps.app.goo.gl/wh4rTgaAwSs3vEs5A" target="_blank" style="color: white;">COMO LLEGAR</a></button>
-						<button class="btn btn-primary btn-block"><a href="./confirmacion.html" target="_blank" style="color: white;">CONFIRMAR ASISTENCIA</a></button>
-						<button class="btn btn-primary btn-block"><a href="https://calendar.app.google/ebXLNLvUYHVpwGM28" target="_blank" style="color: white;">AÑADIR AL CALENDARIO</a></button>
-						<button class="btn btn-primary btn-block"><a href="https://mpago.la/1KmFjap" target="_blank" style="color: white;">REGALO RAPIDO</a></button>
+						<button class="btn btn-primary btn-block" id="btn-1" style="color: white;">CEREMONIA EN VIVO</button>
+						<button class="btn btn-primary btn-block" id="btn-2" style="color: white;">COMO LLEGAR</button>
+						<button class="btn btn-primary btn-block" id="btn-3" style="color: white;">CONFIRMAR ASISTENCIA</button>
+						<button class="btn btn-primary btn-block" id="btn-4" style="color: white;">AÑADIR AL CALENDARIO</button>
+						<button class="btn btn-primary btn-block" id="btn-5" style="color: white;">REGALO RAPIDO</button>
 					</div>
 				</div>
 		</div>
@@ -619,6 +620,31 @@
 		window.location.href = './historia.html';
 	})
 
+	const btn1 = document.getElementById('btn-1');
+	const btn2 = document.getElementById('btn-2');
+	const btn3 = document.getElementById('btn-3');
+	const btn4 = document.getElementById('btn-4');
+	const btn5 = document.getElementById('btn-5');
+
+	btn1.addEventListener('click', () => {
+		window.open("https://youtube.com/live/uommi4NsMsk?feature=share", '_blank');
+	});
+
+	btn2.addEventListener('click', () => {
+		window.open("https://maps.app.goo.gl/wh4rTgaAwSs3vEs5A", '_blank');
+	});
+	
+	btn3.addEventListener('click', () => {
+		window.open("./confirmacion.html", '_blank');
+	});
+
+	btn4.addEventListener('click', () => {
+		window.open("https://calendar.app.google/ebXLNLvUYHVpwGM28", '_blank');
+	});
+
+	btn5.addEventListener('click', () => {
+		window.open("https://mpago.la/1KmFjap", '_blank');
+	});
 	
 
 </script>
