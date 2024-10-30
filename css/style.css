@@ -1942,3 +1942,37 @@ form label {
 #historia-completa {
   cursor: pointer !important;
 }
+
+#confirmed {
+  margin: 0;
+}
+
+#confirmed div img {
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid white;
+}
+
+@media screen and (max-width: 768px) {
+  #confirmed div img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #confirmed div img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  #confirmed div img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #confirmed div img {
+    height: 30px;
+  }
+}
