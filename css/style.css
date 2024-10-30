@@ -1953,6 +1953,12 @@ form label {
   border: 2px solid white;
 }
 
+@media screen and (max-width: 300px) {
+  #confirmed div img {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #confirmed div img {
     display: none;
