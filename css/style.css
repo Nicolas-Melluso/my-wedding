@@ -1915,13 +1915,11 @@ form label {
 }
 
 #form-confirmation {
-  background-color: #d74c4c82;
-  display: flex;
+  background-color: #d54d8a;
 }
 
-#form-confirmation iframe {
-  overflow: hidden;
-  margin-left: 25%;
+#form-confirmation img {
+  margin: 10% 34%;
 }
 
 #selected-by-me {

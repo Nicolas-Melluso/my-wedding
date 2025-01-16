@@ -228,5 +228,18 @@
 		counterWayPoint();
 	});
 
-
 }());
+
+// Seleccionar el elemento y el audio
+const sqgElement = document.getElementById('sqg');
+const sqgAudio = document.getElementById('sqg-audio');
+
+// Reproducir la canción al pasar el cursor
+sqgElement.addEventListener('mouseenter', () => {
+    sqgAudio.play();
+});
+
+// Pausar la canción al salir del área
+sqgElement.addEventListener('mouseleave', () => {
+    sqgAudio.pause();
+});
