@@ -1963,6 +1963,13 @@ form label {
   }
 }
 
+.lazy-bg {
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 @media screen and (max-width: 480px) {
   #confirmed div img {
     display: none;

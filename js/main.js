@@ -208,6 +208,41 @@
 		}
 	};
 
+	var lazyBackgrounds = function() {
+		var lazyElements = document.querySelectorAll('[data-bg]');
+		if (!lazyElements.length) {
+			return;
+		}
+
+		var loadBackground = function (element) {
+			var bg = element.getAttribute('data-bg');
+			if (!bg) return;
+			element.style.backgroundImage = 'url(' + bg + ')';
+			element.removeAttribute('data-bg');
+			element.classList.remove('lazy-bg');
+		};
+
+		if (!('IntersectionObserver' in window)) {
+			lazyElements.forEach(loadBackground);
+			return;
+		}
+
+		var observer = new IntersectionObserver(function (entries, observerRef) {
+			entries.forEach(function (entry) {
+				if (entry.isIntersecting) {
+					loadBackground(entry.target);
+					observerRef.unobserve(entry.target);
+				}
+			});
+		}, {
+			rootMargin: '200px 0px'
+		});
+
+		lazyElements.forEach(function (element) {
+			observer.observe(element);
+		});
+	};
+
 	// Parallax
 	var parallax = function() {
 		$(window).stellar();
@@ -226,6 +261,7 @@
 		loaderPage();
 		counter();
 		counterWayPoint();
+		lazyBackgrounds();
 	});
 
 }());
